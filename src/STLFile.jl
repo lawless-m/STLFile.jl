@@ -1,7 +1,6 @@
 module STLFile
 
 using TriMesh
-using Printf
 
 export STL_ASCII, STL_BIN
 
@@ -21,7 +20,12 @@ function STL_ASCII(n::Net, io::IO)
 		abf = n.Vertices[f.AB.From]
 		abt = n.Vertices[f.AB.To]
 		bct = n.Vertices[f.BC.To]
-		@printf(io, "facet normal 0 0 0\n\touter loop\n\t\tvertex %e %e %e\n\t\tvertex %e %e %e\n\t\tvertex %e %e %e\nendloop\n", abf.x, abf.y, abf.z, abt.x, abt.y, abt.z, bct.x, bct.y, bct.z)
+		println(io, "facet normal 0 0 0")
+		println(io, "\touter loop")
+		println(io, "\t\tvertex $(abf.x), $(abf.y), $(abf.z)")
+		println(io, "\t\tvertex $(abt.x), $(abt.y), $(abt.z)")
+		println(io, "\t\tvertex $(bct.x), $(bct.y), $(bct.z)")
+		println(io, "\tendloop")
 	end
 	println(io, "endsolid Mesh.jl")
 end
