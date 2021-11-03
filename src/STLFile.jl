@@ -1,6 +1,6 @@
 module STLFile
 
-using TriMesh
+using TriMeshes
 
 export STL_ASCII, STL_BIN
 

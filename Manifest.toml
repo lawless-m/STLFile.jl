@@ -1,2 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
+[[TriMeshes]]
+git-tree-sha1 = "c825d8a9b2a84a0b2b4f7e7220afb3c58548ee06"
+repo-rev = "main"
+repo-url = "https://github.com/lawless-m/TriMeshes.jl"
+uuid = "017885df-44d7-498c-8344-6c32d2071748"
+version = "0.1.0"

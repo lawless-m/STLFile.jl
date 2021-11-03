@@ -3,6 +3,9 @@ uuid = "eccd9d95-52b5-4b58-a6a4-92d88d9415e5"
 authors = ["Matt Lawless"]
 version = "0.1.0"
 
+[deps]
+TriMeshes = "017885df-44d7-498c-8344-6c32d2071748"
+
 [compat]
 julia = "1"
 
